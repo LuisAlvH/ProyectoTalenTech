@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+
+
+}
+
+.cuotas_bg {
+
+    background-color: black;
+   
+    padding: 0.5em;
+    text-align: center;
+
+
+}
+
+small {
+    color: antiquewhite;
+}
+
+.logo_eco {
+    cursor: pointer;
+    font-size: 40px;
+
+}
+
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 4%;
+
+}
+
+.nax-links {
+    list-style: none;
+
+}
+
+.nax-links li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+.nax-links li a {
+
+    text-decoration: none;
+}
+
+.container.nax-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 700px;
+
+}
+
+
+.nax-links li:hover {
+    transform: scale(1.1);
+
+}
+
+.iconos_nav {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-colum {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-colum h4 {
+
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.footer-colum h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 3px;
+    background-color: rgb(132, 134, 134);
+    box-sizing: border-box;
+    width: 30px;
+   
+}
+
+.footer-colum ul li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer-colum ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.footer-colum ul li a:hover{
+    color: #b6b3b3;
+ 
+}
+
+.div_linea {
+
+    width: 100%;
+    border-top: 1px solid rgba(222, 226, 230, 0.1);
+   
+
+
+}
+
+
+.div_linea2 {
+
+    width: 100%;
+    border-top: 1px solid rgba(222, 226, 230, 0.1);
+    margin-top: 2em;
+
+
+}
+
+.footer-colum .iconos_sociales a i{
+
+    font-size: 14.5px; 
+    color: #ffffff;   
+  
+}
+.footer-colum .iconos_sociales a{
+
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 1px solid #ffffff;
+   
+}
+.footer-colum .iconos_sociales .fb:hover{
+    background-color:  #3c5c9c ;
+    border: none;
+}
+.footer-colum .iconos_sociales .inst:hover{
+    background-color:   #3c6c94 ;
+    border: none;
+}
+.container-footer {
+    
+    max-width: 1170px;
+    margin: auto;
+    padding: 30px 30px 16px 30px;
+
+
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+main {
+    background-color: rgb(202, 206, 180);
+    height: 100vh;
+}
+
+footer {
+    
+    position:relative;
+    background-color: rgb(43, 42, 42);
+    
+}
+.copy{
+    
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 15px;
+    gap: 15px;
+    
+    background-color: black;
+    
+}
+.copy a{
+
+        
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: smaller;
+        transition: color 0.3s ease; 
+
+    
+}
+.copy a:hover{
+
+    
+    color: #ffffff;
+
+
+}
+nav .menu_ham{
+color: #3c5c9c;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+
+/*MEDIA QUERYS*/
+
+
