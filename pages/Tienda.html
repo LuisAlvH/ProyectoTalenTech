@@ -13,34 +13,46 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header>
-      <div class="cuotas_bg">
-        <small>Promociones</small>
+    <div class="cuotas_bg">
+      <small>Promociones</small>
+    </div>
+
+    <header class="container-header">
+      <!-- ///LOGO -->
+      <div class="logo_eco">
+        <a href="../index.html"><i class="fas fa-font"></i></a>
       </div>
 
-      <nav class="container">
-        <div class="logo_eco">
-          <a href="../index.html"><i class="fas fa-font"></i></a>
-        </div>
+      <!-- ///NAV -->
 
-        <ul class="nax-links">
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <button class="close-menu" id="close-menu">
+            <i class="fa-solid fa-xmark close-icon"></i>
+          </button>
           <li><a href="Tienda.html">TIENDA</a></li>
           <li><a href="Sucursales.html">SUCURSALES</a></li>
           <li><a href="Sale.html">SALE</a></li>
           <li><a href="Contacto.html">CONTACTO</a></li>
           <li><a href="Comentarios.html">RESEÑAS</a></li>
         </ul>
-        <div>
-          <a href="#" class="iconos_nav"><i class="fas fa-search"></i></a>
-          <a href="#" class="iconos_nav"><i class="fas fa-user"></i></a>
-          <a href="#" class="iconos_nav"
-            ><i class="fas fa-shopping-cart"></i
-          ></a>
-        </div>
       </nav>
+      <button class="open-menu" id="open-menu">
+        <i class="fa-solid fa-bars menu-icon"></i>
+      </button>
+
+      <div class="iconos-nav" id="icons-nav">
+        <a href="#" class="iconos_nav"><i class="fas fa-search"></i></a>
+        <a href="#" class="iconos_nav"><i class="fas fa-user"></i></a>
+        <a href="#" class="iconos_nav"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </header>
 
     <main>
@@ -48,91 +60,36 @@
         <h2>Tienda</h2>
       </div>
 
-      <div class="container-tienda">
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
+      <div class="container-tienda"></div>
+
+      <div class="modalTienda" id="JsModalCarrito">
+        <div class="modal-container">
+          <button
+            type="button"
+            class="modal-btn-close jsModalClose fas fa-xmark"
+          ></button>
+
+          <div class="modal-info">
+            <div class="modal-header">
+              <h2>
+                <i class="fa fa-cart-arrow-down"
+                  ><span class="cant-arti"></span></i
+                >ARTICULO
+              </h2>
             </div>
-          </a>
-
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
-          </div>
-        </div>
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
+            <div class="modal-body">
+              <div class="modal-list"></div>
             </div>
-          </a>
 
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
-          </div>
-        </div>
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
+            <div class="modal-footer">
+              <div class="modal-list-price">
+                <h4 class="modal-total-cart carrito-total">Total: 14:00</h4>
+              </div>
+              <div class="modal-botons">
+                <a href="#" class="btn-border">IR AL CARRITO</a>
+                <a href="#" class="btn-primary">COMPRAR AHORA</a>
+              </div>
             </div>
-          </a>
-
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
-          </div>
-        </div>
-
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
-            </div>
-          </a>
-
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
-          </div>
-        </div>
-
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
-            </div>
-          </a>
-
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
-          </div>
-        </div>
-        <div class="produc-tienda">
-          <a href="#">
-            <div class="container-img">
-              <img src="../img/Sin_imagen.jpg" alt="sin imagen" />
-            </div>
-          </a>
-
-          <div class="info-product">
-            <a href="#">
-              <h3>Remera Over Carl Negra</h3>
-            </a>
-            <small>$32.990,00 ARS</small>
           </div>
         </div>
       </div>
@@ -184,5 +141,7 @@
         <small>Copiright 2024</small>
       </div>
     </footer>
+
+    <script src="../js/ds.js"></script>
   </body>
 </html>
