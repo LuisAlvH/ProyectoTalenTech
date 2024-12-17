@@ -1,3 +1,31 @@
+const icons_nav = document.querySelector("#icons-nav");
+const nav = document.querySelector("#nav");
+const act_open = document.querySelector("#open-menu");
+const act_close = document.querySelector("#close-menu");
+const iconos_deskop = document.querySelector(".container-header");
+
+act_open.addEventListener("click", () => {
+  if (!nav.contains(icons_nav)) {
+    nav.appendChild(icons_nav);
+  }
+
+  if (icons_nav) {
+    icons_nav.classList.add("iconos-movile");
+  }
+
+  nav.classList.add("visible");
+});
+
+act_close.addEventListener("click", () => {
+  if (icons_nav) {
+    icons_nav.classList.remove("iconos-movile");
+
+    iconos_deskop.appendChild(icons_nav);
+  }
+
+  nav.classList.remove("visible");
+});
+
 let product_json = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -276,34 +304,6 @@ fetch("../js/productos.json")
   })
 
   .catch((error) => console.error("Error:", error));
-
-const icons_nav = document.querySelector("#icons-nav");
-const nav = document.querySelector("#nav");
-const act_open = document.querySelector("#open-menu");
-const act_close = document.querySelector("#close-menu");
-const iconos_deskop = document.querySelector(".container-header");
-
-act_open.addEventListener("click", () => {
-  if (!nav.contains(icons_nav)) {
-    nav.appendChild(icons_nav);
-  }
-
-  if (icons_nav) {
-    icons_nav.classList.add("iconos-movile");
-  }
-
-  nav.classList.add("visible");
-});
-
-act_close.addEventListener("click", () => {
-  if (icons_nav) {
-    icons_nav.classList.remove("iconos-movile");
-
-    iconos_deskop.appendChild(icons_nav);
-  }
-
-  nav.classList.remove("visible");
-});
 
 ///FORMULARIO
 const formContacto = document.querySelector(".Form-contacto");

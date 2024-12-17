@@ -223,7 +223,8 @@ nav .menu_ham {
   }
 }
 
-.container-tienda {
+.container-tienda,
+.container-sale {
   display: grid;
   place-items: center center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
