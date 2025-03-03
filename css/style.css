@@ -913,3 +913,18 @@ button.close-menu:hover {
   font-weight: bold;
   display: none;
 }
+.carrito {
+  position: relative;
+  display: inline-block;
+}
+
+.numero-carrito {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
