@@ -4,6 +4,6 @@ Está diseñada para ser fácil de usar, segura y moderna, ofreciendo una experi
 
 
 Caracteristicas
--Responsivo 
--Carrito de compras
--Catalogo de producto
+- Responsivo 
+- Carrito de compras
+- Catalogo de producto
